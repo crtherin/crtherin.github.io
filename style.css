@@ -32,3 +32,27 @@ p, li { color: var(--text); }
 a { color: var(--accent); }
 nav { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--line); font-size: 15px; color: var(--muted); }
 nav a { margin-right: 18px; }
+form { margin-top: 28px; }
+label { display: block; margin: 18px 0 6px; font-weight: 600; }
+label span { color: var(--muted); font-weight: 400; }
+input, textarea, button { font: inherit; color: inherit; }
+input:not(.trap), textarea {
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+button {
+  margin-top: 20px;
+  padding: 10px 22px;
+  color: #ffffff;
+  background: #0071e3;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+button:disabled { opacity: 0.6; cursor: default; }
+.trap { display: none; }
+.status { min-height: 1.55em; margin-bottom: 0; }
